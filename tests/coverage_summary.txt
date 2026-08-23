@@ -1,0 +1,7 @@
+Reading tracefile /Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tests/coverage.info.
+Summary coverage rate:
+  source files: 1
+  lines.......: 91.7% (1607 of 1752 lines)
+  functions...: 92.8% (205 of 221 functions)
+Message summary:
+  no messages were reported

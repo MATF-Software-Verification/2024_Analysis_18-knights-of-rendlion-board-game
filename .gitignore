@@ -3,3 +3,5 @@ build/
 *.gcda
 *.gcno
 tests/html/
+tinyxml2/build_asan/
+tinyxml2/build_ubsan/

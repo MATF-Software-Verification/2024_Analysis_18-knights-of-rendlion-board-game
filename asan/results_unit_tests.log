@@ -1,0 +1,18 @@
+[PASS] ToBool("true") succeeds and is true
+[PASS] ToBool("True") succeeds and is true
+[PASS] ToBool("TRUE") succeeds and is true
+[PASS] ToBool("false") succeeds and is false
+[PASS] ToBool("False") succeeds and is false
+[PASS] ToBool("FALSE") succeeds and is false
+[PASS] ToBool("nonsense") fails
+[PASS] ChildElementCount() counts all children
+[PASS] ChildElementCount("a") counts only matching children
+[PASS] ChildElementCount("z") is 0 for a non-matching name
+[PASS] Invalid decimal digit in numeric ref: no parse error
+[PASS] Invalid decimal digit in numeric ref: left as literal text
+[PASS] Invalid hex digit in numeric ref: no parse error
+[PASS] Invalid hex digit in numeric ref: left as literal text
+[PASS] Numeric ref with no terminating semicolon: no parse error
+[PASS] Numeric ref with no terminating semicolon: left as literal text
+
+16 passed, 0 failed

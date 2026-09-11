@@ -1,0 +1,987 @@
+635 warnings generated.
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:27:2: warning: preprocessor condition can be written more concisely using '#ifdef' [readability-use-concise-preprocessor-directives]
+   27 | #if defined(ANDROID_NDK)
+      |  ^~~~~~~~~~~~~~~~~~~~~~~
+      |  ifdef ANDROID_NDK
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:96:2: warning: preprocessor condition can be written more concisely using '#ifdef' [readability-use-concise-preprocessor-directives]
+   96 | #if defined(_MSC_VER)
+      |  ^~~~~~~~~~~~~~~~~~~~
+      |  ifdef _MSC_VER
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:141:23: warning: initializer list should have a trailing comma [readability-trailing-comma]
+  141 |     { "gt",     2,              '>'      }
+      |                                           ^
+      |                                           ,
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:178:10: warning: use of a signed integer operand with a binary bitwise operator [bugprone-signed-bitwise]
+  178 |     if ( _flags & NEEDS_DELETE ) {
+      |          ^~~~~~ ~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:196:14: warning: use of a signed integer operand with a binary bitwise operator [bugprone-signed-bitwise]
+  196 |     _flags = flags | NEEDS_DELETE;
+      |              ^~~~~ ~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:215:11: warning: do not use 'else' after 'return' [readability-else-after-return]
+  215 |         } else if (*p == '\n') {
+      |           ^~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:274:22: warning: function 'GetStr' has cognitive complexity of 80 (threshold 25) [readability-function-cognitive-complexity]
+  274 | const char* StrPair::GetStr()
+      |                      ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:276:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+  276 |     TIXMLASSERT( _start );
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:81:43: note: expanded from macro 'TIXMLASSERT'
+   81 | #   define TIXMLASSERT( x )               do {} while(false)
+      |                                           ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:277:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+  277 |     TIXMLASSERT( _end );
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:81:43: note: expanded from macro 'TIXMLASSERT'
+   81 | #   define TIXMLASSERT( x )               do {} while(false)
+      |                                           ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:278:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+  278 |     if ( _flags & NEEDS_FLUSH ) {
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:282:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  282 |         if ( _flags ) {
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:286:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+  286 |             while( p < _end ) {
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:287:17: note: +4, including nesting penalty of 3, nesting level increased to 4
+  287 |                 if ( (_flags & NEEDS_NEWLINE_NORMALIZATION) && *p == CR ) {
+      |                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:287:61: note: +1
+  287 |                 if ( (_flags & NEEDS_NEWLINE_NORMALIZATION) && *p == CR ) {
+      |                                                             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:291:21: note: +5, including nesting penalty of 4, nesting level increased to 5
+  291 |                     if ( *(p+1) == LF ) {
+      |                     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:294:21: note: +1, nesting level increased to 5
+  294 |                     else {
+      |                     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:300:22: note: +1, nesting level increased to 4
+  300 |                 else if ( (_flags & NEEDS_NEWLINE_NORMALIZATION) && *p == LF ) {
+      |                      ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:300:66: note: +1
+  300 |                 else if ( (_flags & NEEDS_NEWLINE_NORMALIZATION) && *p == LF ) {
+      |                                                                  ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:301:21: note: +5, including nesting penalty of 4, nesting level increased to 5
+  301 |                     if ( *(p+1) == CR ) {
+      |                     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:304:21: note: +1, nesting level increased to 5
+  304 |                     else {
+      |                     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:310:22: note: +1, nesting level increased to 4
+  310 |                 else if ( (_flags & NEEDS_ENTITY_PROCESSING) && *p == '&' ) {
+      |                      ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:310:62: note: +1
+  310 |                 else if ( (_flags & NEEDS_ENTITY_PROCESSING) && *p == '&' ) {
+      |                                                              ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:316:21: note: +5, including nesting penalty of 4, nesting level increased to 5
+  316 |                     if ( *(p+1) == '#' ) {
+      |                     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:321:25: note: +6, including nesting penalty of 5, nesting level increased to 6
+  321 |                         if ( adjusted == 0 ) {
+      |                         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:326:25: note: +1, nesting level increased to 6
+  326 |                         else {
+      |                         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:327:29: note: +7, including nesting penalty of 6, nesting level increased to 7
+  327 |                             TIXMLASSERT( 0 <= len && len <= buflen );
+      |                             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:81:43: note: expanded from macro 'TIXMLASSERT'
+   81 | #   define TIXMLASSERT( x )               do {} while(false)
+      |                                           ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:328:29: note: +7, including nesting penalty of 6, nesting level increased to 7
+  328 |                             TIXMLASSERT( q + len <= adjusted );
+      |                             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:81:43: note: expanded from macro 'TIXMLASSERT'
+   81 | #   define TIXMLASSERT( x )               do {} while(false)
+      |                                           ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:334:21: note: +1, nesting level increased to 5
+  334 |                     else {
+      |                     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:336:25: note: +6, including nesting penalty of 5, nesting level increased to 6
+  336 |                         for( int i = 0; i < NUM_ENTITIES; ++i ) {
+      |                         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:338:29: note: +7, including nesting penalty of 6, nesting level increased to 7
+  338 |                             if ( strncmp( p + 1, entity.pattern, entity.length ) == 0
+      |                             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:339:37: note: +1
+  339 |                                     && *( p + entity.length + 1 ) == ';' ) {
+      |                                     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:348:25: note: +6, including nesting penalty of 5, nesting level increased to 6
+  348 |                         if ( !entityFound ) {
+      |                         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:355:17: note: +1, nesting level increased to 4
+  355 |                 else {
+      |                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:365:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  365 |         if ( _flags & NEEDS_WHITESPACE_COLLAPSING ) {
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:370:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+  370 |     TIXMLASSERT( _start );
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:81:43: note: expanded from macro 'TIXMLASSERT'
+   81 | #   define TIXMLASSERT( x )               do {} while(false)
+      |                                           ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:278:10: warning: use of a signed integer operand with a binary bitwise operator [bugprone-signed-bitwise]
+  278 |     if ( _flags & NEEDS_FLUSH ) {
+      |          ^~~~~~ ~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:280:9: warning: use of a signed integer operand with a binary bitwise operator [bugprone-signed-bitwise]
+  280 |         _flags ^= NEEDS_FLUSH;
+      |         ^~~~~~ ~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:287:23: warning: use of a signed integer operand with a binary bitwise operator [bugprone-signed-bitwise]
+  287 |                 if ( (_flags & NEEDS_NEWLINE_NORMALIZATION) && *p == CR ) {
+      |                       ^~~~~~ ~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:300:28: warning: use of a signed integer operand with a binary bitwise operator [bugprone-signed-bitwise]
+  300 |                 else if ( (_flags & NEEDS_NEWLINE_NORMALIZATION) && *p == LF ) {
+      |                            ^~~~~~ ~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:310:28: warning: use of a signed integer operand with a binary bitwise operator [bugprone-signed-bitwise]
+  310 |                 else if ( (_flags & NEEDS_ENTITY_PROCESSING) && *p == '&' ) {
+      |                            ^~~~~~ ~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:365:14: warning: use of a signed integer operand with a binary bitwise operator [bugprone-signed-bitwise]
+  365 |         if ( _flags & NEEDS_WHITESPACE_COLLAPSING ) {
+      |              ^~~~~~ ~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:368:19: warning: use of a signed integer operand with a binary bitwise operator [bugprone-signed-bitwise]
+  368 |         _flags = (_flags & NEEDS_DELETE);
+      |                   ^~~~~~ ~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:382:36: warning: 2 adjacent parameters of 'SetBoolSerialization' of similar type ('const char *') are easily swapped by mistake [bugprone-easily-swappable-parameters]
+  382 | void XMLUtil::SetBoolSerialization(const char* writeTrue, const char* writeFalse)
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:382:48: note: the first parameter in the range is 'writeTrue'
+  382 | void XMLUtil::SetBoolSerialization(const char* writeTrue, const char* writeFalse)
+      |                                                ^~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:382:71: note: the last parameter in the range is 'writeFalse'
+  382 | void XMLUtil::SetBoolSerialization(const char* writeTrue, const char* writeFalse)
+      |                                                                       ^~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:387:18: warning: redundant parentheses around expression [readability-redundant-parentheses]
+  387 |         writeBoolTrue = (writeTrue) ? writeTrue : defTrue;
+      |                         ^         ~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:388:19: warning: redundant parentheses around expression [readability-redundant-parentheses]
+  388 |         writeBoolFalse = (writeFalse) ? writeFalse : defFalse;
+      |                          ^          ~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:441:23: warning: use of a signed integer operand with a binary bitwise operator [bugprone-signed-bitwise]
+  441 |             input >>= 6;
+      |                   ~~~ ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:446:23: warning: use of a signed integer operand with a binary bitwise operator [bugprone-signed-bitwise]
+  446 |             input >>= 6;
+      |                   ~~~ ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:451:23: warning: use of a signed integer operand with a binary bitwise operator [bugprone-signed-bitwise]
+  451 |             input >>= 6;
+      |                   ~~~ ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:463:22: warning: function 'GetCharacterRef' has cognitive complexity of 36 (threshold 25) [readability-function-cognitive-complexity]
+  463 | const char* XMLUtil::GetCharacterRef(const char* p, char* value, int* length)
+      |                      ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:470:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+  470 |     if (*(p + 1) == '#' && *(p + 2)) {
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:470:25: note: +1
+  470 |     if (*(p + 1) == '#' && *(p + 2)) {
+      |                         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:481:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  481 |         if (*(p + 2) == 'x') {
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:489:9: note: +1, nesting level increased to 2
+  489 |         else {
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:493:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  493 |         if (!(*q)) {
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:498:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  498 |         if (!q) {
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:501:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  501 |         TIXMLASSERT(*q == SEMICOLON);
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:81:43: note: expanded from macro 'TIXMLASSERT'
+   81 | #   define TIXMLASSERT( x )               do {} while(false)
+      |                                           ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:506:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  506 |         while (*q != terminator) {
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:509:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+  509 |             if (*q >= '0' && *q <= '9') {
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:509:27: note: +1
+  509 |             if (*q >= '0' && *q <= '9') {
+      |                           ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:512:18: note: +1, nesting level increased to 3
+  512 |             else if (hex && (*q >= 'a' && *q <= 'f')) {
+      |                  ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:512:26: note: +1
+  512 |             else if (hex && (*q >= 'a' && *q <= 'f')) {
+      |                          ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:515:18: note: +1, nesting level increased to 3
+  515 |             else if (hex && (*q >= 'A' && *q <= 'F')) {
+      |                  ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:515:26: note: +1
+  515 |             else if (hex && (*q >= 'A' && *q <= 'F')) {
+      |                          ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:518:13: note: +1, nesting level increased to 3
+  518 |             else {
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:521:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+  521 |             TIXMLASSERT(digit < radix);
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:81:43: note: expanded from macro 'TIXMLASSERT'
+   81 | #   define TIXMLASSERT( x )               do {} while(false)
+      |                                           ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:528:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+  528 |             if (digitScaled > MAX_CODE_POINT || ucs > MAX_CODE_POINT - digitScaled) {
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:528:46: note: +1
+  528 |             if (digitScaled > MAX_CODE_POINT || ucs > MAX_CODE_POINT - digitScaled) {
+      |                                              ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:533:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+  533 |             if (mult > MAX_CODE_POINT) {
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:539:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  539 |         if (ucs > MAX_CODE_POINT) {
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:544:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+  544 |         if (*length == 0) {
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:533:13: warning: use `std::min` instead of `>` [readability-use-std-min-max]
+   26 |             if (mult > MAX_CODE_POINT) {
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |             mult = std::min(mult, MAX_CODE_POINT);
+   27 |                 mult = MAX_CODE_POINT;
+      |                 ~~~~~~~~~~~~~~~~~~~~~~
+   28 |             }
+      |             ~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:556:5: warning: the value returned by this function should not be disregarded; neglecting it may lead to errors [cert-err33-c]
+  556 |     TIXML_SNPRINTF( buffer, bufferSize, "%d", v );
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:82:25: note: expanded from macro 'TIXML_SNPRINTF'
+   82 |         #define TIXML_SNPRINTF  snprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:556:5: note: cast the expression to void to silence this warning
+  556 |     TIXML_SNPRINTF( buffer, bufferSize, "%d", v );
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:82:25: note: expanded from macro 'TIXML_SNPRINTF'
+   82 |         #define TIXML_SNPRINTF  snprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:562:5: warning: the value returned by this function should not be disregarded; neglecting it may lead to errors [cert-err33-c]
+  562 |     TIXML_SNPRINTF( buffer, bufferSize, "%u", v );
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:82:25: note: expanded from macro 'TIXML_SNPRINTF'
+   82 |         #define TIXML_SNPRINTF  snprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:562:5: note: cast the expression to void to silence this warning
+  562 |     TIXML_SNPRINTF( buffer, bufferSize, "%u", v );
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:82:25: note: expanded from macro 'TIXML_SNPRINTF'
+   82 |         #define TIXML_SNPRINTF  snprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:568:5: warning: the value returned by this function should not be disregarded; neglecting it may lead to errors [cert-err33-c]
+  568 |     TIXML_SNPRINTF( buffer, bufferSize, "%s", v ? writeBoolTrue : writeBoolFalse);
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:82:25: note: expanded from macro 'TIXML_SNPRINTF'
+   82 |         #define TIXML_SNPRINTF  snprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:568:5: note: cast the expression to void to silence this warning
+  568 |     TIXML_SNPRINTF( buffer, bufferSize, "%s", v ? writeBoolTrue : writeBoolFalse);
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:82:25: note: expanded from macro 'TIXML_SNPRINTF'
+   82 |         #define TIXML_SNPRINTF  snprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:577:5: warning: the value returned by this function should not be disregarded; neglecting it may lead to errors [cert-err33-c]
+  577 |     TIXML_SNPRINTF( buffer, bufferSize, "%.8g", v );
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:82:25: note: expanded from macro 'TIXML_SNPRINTF'
+   82 |         #define TIXML_SNPRINTF  snprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:577:5: note: cast the expression to void to silence this warning
+  577 |     TIXML_SNPRINTF( buffer, bufferSize, "%.8g", v );
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:82:25: note: expanded from macro 'TIXML_SNPRINTF'
+   82 |         #define TIXML_SNPRINTF  snprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:583:5: warning: the value returned by this function should not be disregarded; neglecting it may lead to errors [cert-err33-c]
+  583 |     TIXML_SNPRINTF( buffer, bufferSize, "%.17g", v );
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:82:25: note: expanded from macro 'TIXML_SNPRINTF'
+   82 |         #define TIXML_SNPRINTF  snprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:583:5: note: cast the expression to void to silence this warning
+  583 |     TIXML_SNPRINTF( buffer, bufferSize, "%.17g", v );
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:82:25: note: expanded from macro 'TIXML_SNPRINTF'
+   82 |         #define TIXML_SNPRINTF  snprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:590:2: warning: the value returned by this function should not be disregarded; neglecting it may lead to errors [cert-err33-c]
+  590 |         TIXML_SNPRINTF(buffer, bufferSize, "%lld", static_cast<long long>(v));
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:82:25: note: expanded from macro 'TIXML_SNPRINTF'
+   82 |         #define TIXML_SNPRINTF  snprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:590:2: note: cast the expression to void to silence this warning
+  590 |         TIXML_SNPRINTF(buffer, bufferSize, "%lld", static_cast<long long>(v));
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:82:25: note: expanded from macro 'TIXML_SNPRINTF'
+   82 |         #define TIXML_SNPRINTF  snprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:596:5: warning: the value returned by this function should not be disregarded; neglecting it may lead to errors [cert-err33-c]
+  596 |     TIXML_SNPRINTF(buffer, bufferSize, "%llu", static_cast<unsigned long long>(v));
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:82:25: note: expanded from macro 'TIXML_SNPRINTF'
+   82 |         #define TIXML_SNPRINTF  snprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:596:5: note: cast the expression to void to silence this warning
+  596 |     TIXML_SNPRINTF(buffer, bufferSize, "%llu", static_cast<unsigned long long>(v));
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:82:25: note: expanded from macro 'TIXML_SNPRINTF'
+   82 |         #define TIXML_SNPRINTF  snprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:603:13: warning: 'sscanf' used to convert a string to an unsigned integer value, but function will not report conversion errors; consider using 'strtoul' instead [bugprone-unchecked-string-to-number-conversion,cert-err34-c]
+  603 |         if (TIXML_SSCANF(str, "%x", &v) == 1) {
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:93:25: note: expanded from macro 'TIXML_SSCANF'
+   93 |         #define TIXML_SSCANF   sscanf
+      |                                ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:609:13: warning: 'sscanf' used to convert a string to an integer value, but function will not report conversion errors; consider using 'strtol' instead [bugprone-unchecked-string-to-number-conversion,cert-err34-c]
+  609 |         if (TIXML_SSCANF(str, "%d", value) == 1) {
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:93:25: note: expanded from macro 'TIXML_SSCANF'
+   93 |         #define TIXML_SSCANF   sscanf
+      |                                ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:619:16: warning: redundant boolean literal in conditional return statement [readability-simplify-boolean-expr]
+  618 |     if (TIXML_SSCANF(str, IsPrefixHex(str) ? "%x" : "%u", value) == 1) {
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     return TIXML_SSCANF(str, IsPrefixHex(str) ? "%x" : "%u", value) == 1
+  619 |         return true;
+      |         ~~~~~~~^~~~~
+  620 |     }
+      |     ~
+  621 |     return false;
+      |     ~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:628:30: warning: redundant boolean literal in ternary expression result [readability-simplify-boolean-expr]
+  628 |         *value = (ival==0) ? false : true;
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~
+      |                  ival != 0
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:652:10: warning: 'sscanf' used to convert a string to a floating-point value, but function will not report conversion errors; consider using 'strtof' instead [bugprone-unchecked-string-to-number-conversion,cert-err34-c]
+  652 |     if ( TIXML_SSCANF( str, "%f", value ) == 1 ) {
+      |          ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:93:25: note: expanded from macro 'TIXML_SSCANF'
+   93 |         #define TIXML_SSCANF   sscanf
+      |                                ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:653:16: warning: redundant boolean literal in conditional return statement [readability-simplify-boolean-expr]
+  652 |     if ( TIXML_SSCANF( str, "%f", value ) == 1 ) {
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     return TIXML_SSCANF( str, "%f", value ) == 1
+  653 |         return true;
+      |         ~~~~~~~^~~~~
+  654 |     }
+      |     ~
+  655 |     return false;
+      |     ~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:661:10: warning: 'sscanf' used to convert a string to a floating-point value, but function will not report conversion errors; consider using 'strtod' instead [bugprone-unchecked-string-to-number-conversion,cert-err34-c]
+  661 |     if ( TIXML_SSCANF( str, "%lf", value ) == 1 ) {
+      |          ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:93:25: note: expanded from macro 'TIXML_SSCANF'
+   93 |         #define TIXML_SSCANF   sscanf
+      |                                ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:662:16: warning: redundant boolean literal in conditional return statement [readability-simplify-boolean-expr]
+  661 |     if ( TIXML_SSCANF( str, "%lf", value ) == 1 ) {
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     return TIXML_SSCANF( str, "%lf", value ) == 1
+  662 |         return true;
+      |         ~~~~~~~^~~~~
+  663 |     }
+      |     ~
+  664 |     return false;
+      |     ~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:672:13: warning: 'sscanf' used to convert a string to an unsigned integer value, but function will not report conversion errors; consider using 'strtoull' instead [bugprone-unchecked-string-to-number-conversion,cert-err34-c]
+  672 |         if (TIXML_SSCANF(str, "%llx", &v) == 1) {
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:93:25: note: expanded from macro 'TIXML_SSCANF'
+   93 |         #define TIXML_SSCANF   sscanf
+      |                                ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:679:13: warning: 'sscanf' used to convert a string to an integer value, but function will not report conversion errors; consider using 'strtoll' instead [bugprone-unchecked-string-to-number-conversion,cert-err34-c]
+  679 |         if (TIXML_SSCANF(str, "%lld", &v) == 1) {
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:93:25: note: expanded from macro 'TIXML_SSCANF'
+   93 |         #define TIXML_SSCANF   sscanf
+      |                                ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:797:5: warning: initializer for member '_value' is redundant [readability-redundant-member-init]
+  797 |     _value(),
+      |     ^~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:856:30: warning: statement should be inside braces [readability-braces-around-statements]
+  856 |     if ( this->ToDocument() )
+      |                              ^
+      |                               {
+  857 |         return 0;
+      |                  
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:874:13: warning: statement should be inside braces [readability-braces-around-statements]
+  874 |         if (!clone) return 0;
+      |                    ^         
+      |                     {
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1078:16: warning: function 'ParseDeep' has cognitive complexity of 51 (threshold 25) [readability-function-cognitive-complexity]
+ 1078 | char* XMLNode::ParseDeep( char* p, StrPair* parentEndTag, int* curLineNumPtr )
+      |                ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1098:2: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1098 |         if (_document->Error())
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1102:2: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1102 |         while( p && *p ) {
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1102:11: note: +1
+ 1102 |         while( p && *p ) {
+      |                  ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1106:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1106 |         TIXMLASSERT( p );
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:81:43: note: expanded from macro 'TIXMLASSERT'
+   81 | #   define TIXMLASSERT( x )               do {} while(false)
+      |                                           ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1107:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1107 |         if ( node == 0 ) {
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1116:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1116 |         if ( !p ) {
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1118:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 1118 |             if ( !_document->Error() ) {
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1125:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1125 |         if ( decl ) {
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1136:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 1136 |             if (ToDocument()) {
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1137:17: note: +4, including nesting penalty of 3, nesting level increased to 4
+ 1137 |                 if (FirstChild()) {
+      |                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1141:37: note: +1
+ 1141 |                         LastChild() &&
+      |                                     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1144:17: note: +1, nesting level increased to 4
+ 1144 |                 else {
+      |                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1148:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 1148 |             if ( !wellLocated ) {
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1156:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1156 |         if ( ele ) {
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1158:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 1158 |             if ( ele->ClosingType() == XMLElement::CLOSING ) {
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1159:17: note: +4, including nesting penalty of 3, nesting level increased to 4
+ 1159 |                 if ( parentEndTag ) {
+      |                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1170:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 1170 |             if ( endTag.Empty() ) {
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1171:17: note: +4, including nesting penalty of 3, nesting level increased to 4
+ 1171 |                 if ( ele->ClosingType() == XMLElement::OPEN ) {
+      |                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1175:13: note: +1, nesting level increased to 3
+ 1175 |             else {
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1176:17: note: +4, including nesting penalty of 3, nesting level increased to 4
+ 1176 |                 if ( ele->ClosingType() != XMLElement::OPEN ) {
+      |                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1179:22: note: +1, nesting level increased to 4
+ 1179 |                 else if ( !XMLUtil::StringEqual( endTag.GetStr(), ele->Name() ) ) {
+      |                      ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1183:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 1183 |             if ( mismatch ) {
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1098:25: warning: statement should be inside braces [readability-braces-around-statements]
+ 1098 |         if (_document->Error())
+      |                                ^
+      |                                 {
+ 1099 |                 return 0;
+      |                          
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1176:63: warning: repeated branch body in conditional chain [bugprone-branch-clone]
+ 1176 |                 if ( ele->ClosingType() != XMLElement::OPEN ) {
+      |                                                               ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1178:18: note: end of the original
+ 1178 |                 }
+      |                  ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1179:83: note: clone 1 starts here
+ 1179 |                 else if ( !XMLUtil::StringEqual( endTag.GetStr(), ele->Name() ) ) {
+      |                                                                                   ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1209:15: warning: method 'InsertChildPreamble' can be made static [readability-convert-member-functions-to-static]
+ 1209 | void XMLNode::InsertChildPreamble( XMLNode* insertThis ) const
+      |               ^                                          ~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1239:44: warning: all parameters should be named in a function [readability-named-parameter]
+ 1239 | char* XMLText::ParseDeep( char* p, StrPair*, int* curLineNumPtr )
+      |                                            ^
+      |                                             /*parentEndTag*/
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1248:5: warning: do not use 'else' after 'return' [readability-else-after-return]
+ 1248 |     else {
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1251:13: warning: use of a signed integer operand with a binary bitwise operator [bugprone-signed-bitwise]
+ 1251 |             flags |= StrPair::NEEDS_WHITESPACE_COLLAPSING;
+      |             ^~~~~ ~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1304:47: warning: all parameters should be named in a function [readability-named-parameter]
+ 1304 | char* XMLComment::ParseDeep( char* p, StrPair*, int* curLineNumPtr )
+      |                                               ^
+      |                                                /*parentEndTag*/
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1353:51: warning: all parameters should be named in a function [readability-named-parameter]
+ 1353 | char* XMLDeclaration::ParseDeep( char* p, StrPair*, int* curLineNumPtr )
+      |                                                   ^
+      |                                                    /*parentEndTag*/
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1401:47: warning: all parameters should be named in a function [readability-named-parameter]
+ 1401 | char* XMLUnknown::ParseDeep( char* p, StrPair*, int* curLineNumPtr )
+      |                                               ^
+      |                                                /*parentEndTag*/
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1633:36: warning: 2 adjacent parameters of 'Attribute' of similar type ('const char *') are easily swapped by mistake [bugprone-easily-swappable-parameters]
+ 1633 | const char* XMLElement::Attribute( const char* name, const char* value ) const
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1633:48: note: the first parameter in the range is 'name'
+ 1633 | const char* XMLElement::Attribute( const char* name, const char* value ) const
+      |                                                ^~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1633:66: note: the last parameter in the range is 'value'
+ 1633 | const char* XMLElement::Attribute( const char* name, const char* value ) const
+      |                                                                  ^~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1715:47: warning: statement should be inside braces [readability-braces-around-statements]
+ 1715 |         if ( FirstChild() && FirstChild()->ToText() )
+      |                                                      ^
+      |                                                       {
+ 1716 |                 FirstChild()->SetValue( inText );
+ 1717 |         else {
+      |         } 
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1715:47: warning: statement should have braces [readability-inconsistent-ifelse-braces]
+ 1715 |         if ( FirstChild() && FirstChild()->ToText() )
+      |                                                      ^
+      |                                                       {
+ 1716 |                 FirstChild()->SetValue( inText );
+ 1717 |         else {
+      |         } 
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1965:19: warning: function 'ParseAttributes' has cognitive complexity of 28 (threshold 25) [readability-function-cognitive-complexity]
+ 1965 | char* XMLElement::ParseAttributes( char* p, int* curLineNumPtr )
+      |                   ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1970:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 1970 |     while( p ) {
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1972:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1972 |         if ( !(*p) ) {
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1978:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 1978 |         if (XMLUtil::IsNameStartChar( static_cast<unsigned char>(*p) ) ) {
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1980:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 1980 |             TIXMLASSERT( attrib );
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:81:43: note: expanded from macro 'TIXMLASSERT'
+   81 | #   define TIXMLASSERT( x )               do {} while(false)
+      |                                           ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1986:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 1986 |             if ( !p || Attribute( attrib->Name() ) ) {
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1986:21: note: +1
+ 1986 |             if ( !p || Attribute( attrib->Name() ) ) {
+      |                     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1996:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 1996 |             if ( prevAttribute ) {
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1997:17: note: +4, including nesting penalty of 3, nesting level increased to 4
+ 1997 |                 TIXMLASSERT( prevAttribute->_next == 0 );
+      |                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:81:43: note: expanded from macro 'TIXMLASSERT'
+   81 | #   define TIXMLASSERT( x )               do {} while(false)
+      |                                           ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2000:13: note: +1, nesting level increased to 3
+ 2000 |             else {
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2001:17: note: +4, including nesting penalty of 3, nesting level increased to 4
+ 2001 |                 TIXMLASSERT( _rootAttribute == 0 );
+      |                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:81:43: note: expanded from macro 'TIXMLASSERT'
+   81 | #   define TIXMLASSERT( x )               do {} while(false)
+      |                                           ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2007:14: note: +1, nesting level increased to 2
+ 2007 |         else if ( *p == '>' ) {
+      |              ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2012:14: note: +1, nesting level increased to 2
+ 2012 |         else if ( *p == '/' && *(p+1) == '>' ) {
+      |              ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2012:29: note: +1
+ 2012 |         else if ( *p == '/' && *(p+1) == '>' ) {
+      |                             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2016:9: note: +1, nesting level increased to 2
+ 2016 |         else {
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2141:20: warning: redundant boolean literal in conditional return statement [readability-simplify-boolean-expr]
+ 2141 |             return false;
+      |                    ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2139:14: note: conditions that can be simplified
+ 2139 |         if ( a || b ) {
+      |              ^~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2143:9: note: return statement that can be simplified
+ 2143 |         return true;
+      |         ^~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2185:30: warning: initializer list should have a trailing comma [readability-trailing-comma]
+ 2185 |         "XML_ELEMENT_DEPTH_EXCEEDED"
+      |                                     ^
+      |                                     ,
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2195:5: warning: initializer for member '_errorStr' is redundant [readability-redundant-member-init]
+ 2195 |     _errorStr(),
+      |     ^~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2200:5: warning: initializer for member '_unlinked' is redundant [readability-redundant-member-init]
+ 2200 |     _unlinked(),
+      |     ^~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2201:5: warning: initializer for member '_elementPool' is redundant [readability-redundant-member-init]
+ 2201 |     _elementPool(),
+      |     ^~~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2202:5: warning: initializer for member '_attributePool' is redundant [readability-redundant-member-init]
+ 2202 |     _attributePool(),
+      |     ^~~~~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2203:5: warning: initializer for member '_textPool' is redundant [readability-redundant-member-init]
+ 2203 |     _textPool(),
+      |     ^~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2204:5: warning: initializer for member '_commentPool' is redundant [readability-redundant-member-init]
+ 2204 |     _commentPool()
+      |     ^~~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2246:2: warning: preprocessor condition is always 'false', consider removing both the condition and its contents [readability-avoid-unconditional-preprocessor-if]
+ 2246 | #if 0
+      |  ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2332:19: warning: method 'DeleteNode' can be made static [readability-convert-member-functions-to-static]
+ 2332 | void XMLDocument::DeleteNode( XMLNode* node )   {   
+      |                   ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2367:5: warning: the value returned by this function should not be disregarded; neglecting it may lead to errors [cert-err33-c]
+ 2367 |     fclose( fp );
+      |     ^~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2367:5: note: cast the expression to void to silence this warning
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2418:5: warning: Potential out of bound access to the heap area with tainted index [clang-analyzer-security.ArrayBound]
+ 2418 |     _charBuffer[size] = 0;
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2354:10: note: Assuming 'filename' is non-null
+ 2354 |     if ( !filename ) {
+      |          ^~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2354:11: note: 'filename' is non-null
+ 2354 |     if ( !filename ) {
+      |           ^~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2354:5: note: Taking false branch
+ 2354 |     if ( !filename ) {
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2361:16: note: Calling 'callfopen'
+ 2361 |     FILE* fp = callfopen( filename, "rb" );
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2318:5: note: Loop condition is false.  Exiting loop
+ 2318 |     TIXMLASSERT( filepath );
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:81:43: note: expanded from macro 'TIXMLASSERT'
+   81 | #   define TIXMLASSERT( x )               do {} while(false)
+      |                                           ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2319:5: note: Loop condition is false.  Exiting loop
+ 2319 |     TIXMLASSERT( mode );
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:81:43: note: expanded from macro 'TIXMLASSERT'
+   81 | #   define TIXMLASSERT( x )               do {} while(false)
+      |                                           ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2327:16: note: Taint originated here
+ 2327 |     FILE* fp = fopen( filepath, mode );
+      |                ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2327:16: note: Taint propagated to the return value
+ 2327 |     FILE* fp = fopen( filepath, mode );
+      |                ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2327:16: note: Assuming that 'fopen' is successful
+ 2327 |     FILE* fp = fopen( filepath, mode );
+      |                ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2361:16: note: Returning from 'callfopen'
+ 2361 |     FILE* fp = callfopen( filename, "rb" );
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2362:11: note: 'fp' is non-null
+ 2362 |     if ( !fp ) {
+      |           ^~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2362:5: note: Taking false branch
+ 2362 |     if ( !fp ) {
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2366:5: note: Calling 'XMLDocument::LoadFile'
+ 2366 |     LoadFile( fp );
+      |     ^~~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2376:29: note: Left side of '&&' is false
+ 2376 |     if ( fgetc( fp ) == EOF && ferror( fp ) != 0 ) {
+      |                             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2385:44: note: Assuming that 'ftello' is successful
+ 2385 |         const long long fileLengthSigned = TIXML_FTELL( fp );
+      |                                            ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:101:22: note: expanded from macro 'TIXML_FTELL'
+  101 |         #define TIXML_FTELL ftello
+      |                             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2387:9: note: Taking false branch
+ 2387 |         if ( fileLengthSigned == -1L ) {
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2391:9: note: Loop condition is false.  Exiting loop
+ 2391 |         TIXMLASSERT( fileLengthSigned >= 0 );
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:81:43: note: expanded from macro 'TIXMLASSERT'
+   81 | #   define TIXMLASSERT( x )               do {} while(false)
+      |                                           ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2398:10: note: 'filelength' is < 'maxSizeT'
+ 2398 |     if ( filelength >= static_cast<unsigned long long>(maxSizeT) ) {
+      |          ^~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2398:5: note: Taking false branch
+ 2398 |     if ( filelength >= static_cast<unsigned long long>(maxSizeT) ) {
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2404:10: note: Assuming 'filelength' is not equal to 0
+ 2404 |     if ( filelength == 0 ) {
+      |          ^~~~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2404:5: note: Taking false branch
+ 2404 |     if ( filelength == 0 ) {
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2410:5: note: Loop condition is false.  Exiting loop
+ 2410 |     TIXMLASSERT( _charBuffer == 0 );
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:81:43: note: expanded from macro 'TIXMLASSERT'
+   81 | #   define TIXMLASSERT( x )               do {} while(false)
+      |                                           ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2412:25: note: Taint propagated to the return value
+ 2412 |     const size_t read = fread( _charBuffer, 1, size, fp );
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2412:25: note: Assuming that 'fread' is successful
+ 2412 |     const size_t read = fread( _charBuffer, 1, size, fp );
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2413:10: note: 'read' is equal to 'size'
+ 2413 |     if ( read != size ) {
+      |          ^~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2413:5: note: Taking false branch
+ 2413 |     if ( read != size ) {
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2418:5: note: Access of the heap area with a tainted index that may be too large
+ 2418 |     _charBuffer[size] = 0;
+      |     ^~~~~~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2439:5: warning: the value returned by this function should not be disregarded; neglecting it may lead to errors [cert-err33-c]
+ 2439 |     fclose( fp );
+      |     ^~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2439:5: note: cast the expression to void to silence this warning
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2505:19: warning: do not define a C-style variadic function; consider using a function parameter pack or currying instead [cert-dcl50-cpp]
+ 2505 | void XMLDocument::SetError( XMLError error, int lineNum, const char* format, ... )
+      |                   ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2516:5: warning: the value returned by this function should not be disregarded; neglecting it may lead to errors [cert-err33-c]
+ 2516 |     TIXML_SNPRINTF(buffer, BUFFER_SIZE, "Error=%s ErrorID=%d (0x%x) Line number=%d",
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:82:25: note: expanded from macro 'TIXML_SNPRINTF'
+   82 |         #define TIXML_SNPRINTF  snprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2516:5: note: cast the expression to void to silence this warning
+ 2516 |     TIXML_SNPRINTF(buffer, BUFFER_SIZE, "Error=%s ErrorID=%d (0x%x) Line number=%d",
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:82:25: note: expanded from macro 'TIXML_SNPRINTF'
+   82 |         #define TIXML_SNPRINTF  snprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2521:3: warning: the value returned by this function should not be disregarded; neglecting it may lead to errors [cert-err33-c]
+ 2521 |                 TIXML_SNPRINTF(buffer + len, BUFFER_SIZE - len, ": ");
+      |                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:82:25: note: expanded from macro 'TIXML_SNPRINTF'
+   82 |         #define TIXML_SNPRINTF  snprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2521:3: note: cast the expression to void to silence this warning
+ 2521 |                 TIXML_SNPRINTF(buffer + len, BUFFER_SIZE - len, ": ");
+      |                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:82:25: note: expanded from macro 'TIXML_SNPRINTF'
+   82 |         #define TIXML_SNPRINTF  snprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2526:3: warning: the value returned by this function should not be disregarded; neglecting it may lead to errors [cert-err33-c]
+ 2526 |                 TIXML_VSNPRINTF(buffer + len, BUFFER_SIZE - len, format, va);
+      |                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:83:26: note: expanded from macro 'TIXML_VSNPRINTF'
+   83 |         #define TIXML_VSNPRINTF vsnprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2526:3: note: cast the expression to void to silence this warning
+ 2526 |                 TIXML_VSNPRINTF(buffer + len, BUFFER_SIZE - len, format, va);
+      |                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:83:26: note: expanded from macro 'TIXML_VSNPRINTF'
+   83 |         #define TIXML_VSNPRINTF vsnprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2590:5: warning: initializer for member '_stack' is redundant [readability-redundant-member-init]
+ 2590 |     _stack(),
+      |     ^~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2597:5: warning: initializer for member '_buffer' is redundant [readability-redundant-member-init]
+ 2597 |     _buffer()
+      |     ^~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2618:18: warning: do not define a C-style variadic function; consider using a function parameter pack or currying instead [cert-dcl50-cpp]
+ 2618 | void XMLPrinter::Print( const char* format, ... )
+      |                  ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2624:9: warning: the value returned by this function should not be disregarded; neglecting it may lead to errors [cert-err33-c]
+ 2624 |         vfprintf( _fp, format, va );
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2624:9: note: cast the expression to void to silence this warning
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2634:3: warning: the value returned by this function should not be disregarded; neglecting it may lead to errors [cert-err33-c]
+ 2634 |                 TIXML_VSNPRINTF( p, len+1, format, va );
+      |                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:83:26: note: expanded from macro 'TIXML_VSNPRINTF'
+   83 |         #define TIXML_VSNPRINTF vsnprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2634:3: note: cast the expression to void to silence this warning
+ 2634 |                 TIXML_VSNPRINTF( p, len+1, format, va );
+      |                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:83:26: note: expanded from macro 'TIXML_VSNPRINTF'
+   83 |         #define TIXML_VSNPRINTF vsnprintf
+      |                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2643:9: warning: the value returned by this function should not be disregarded; neglecting it may lead to errors [cert-err33-c]
+ 2643 |         fwrite ( data , sizeof(char), size, _fp);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2643:9: note: cast the expression to void to silence this warning
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2656:9: warning: the value returned by this function should not be disregarded; neglecting it may lead to errors [cert-err33-c]
+ 2656 |         fputc ( ch, _fp);
+      |         ^~~~~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2656:9: note: cast the expression to void to silence this warning
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2674:18: warning: function 'PrintString' has cognitive complexity of 58 (threshold 25) [readability-function-cognitive-complexity]
+ 2674 | void XMLPrinter::PrintString( const char* p, bool restricted )
+      |                  ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2679:5: note: +1, including nesting penalty of 0, nesting level increased to 1
+ 2679 |     if ( _processEntities ) {
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2680:39: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 2680 |         const bool* flag = restricted ? _restrictedEntityFlag : _entityFlag;
+      |                                       ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2681:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 2681 |         while ( *q ) {
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2682:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 2682 |             TIXMLASSERT( p <= q );
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:81:43: note: expanded from macro 'TIXMLASSERT'
+   81 | #   define TIXMLASSERT( x )               do {} while(false)
+      |                                           ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2684:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 2684 |             if ( *q > 0 && *q < ENTITY_RANGE ) {
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2684:25: note: +1
+ 2684 |             if ( *q > 0 && *q < ENTITY_RANGE ) {
+      |                         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2688:17: note: +4, including nesting penalty of 3, nesting level increased to 4
+ 2688 |                 if ( flag[static_cast<unsigned char>(*q)] ) {
+      |                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2689:21: note: +5, including nesting penalty of 4, nesting level increased to 5
+ 2689 |                     while ( p < q ) {
+      |                     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2691:65: note: +6, including nesting penalty of 5, nesting level increased to 6
+ 2691 |                         const int toPrint = ( INT_MAX < delta ) ? INT_MAX : static_cast<int>(delta);
+      |                                                                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2696:21: note: +5, including nesting penalty of 4, nesting level increased to 5
+ 2696 |                     for( int i=0; i<NUM_ENTITIES; ++i ) {
+      |                     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2697:25: note: +6, including nesting penalty of 5, nesting level increased to 6
+ 2697 |                         if ( entities[i].value == *q ) {
+      |                         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2705:21: note: +5, including nesting penalty of 4, nesting level increased to 5
+ 2705 |                     if ( !entityPatternPrinted ) {
+      |                     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2707:25: note: +6, including nesting penalty of 5, nesting level increased to 6
+ 2707 |                         TIXMLASSERT( false );
+      |                         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:81:43: note: expanded from macro 'TIXMLASSERT'
+   81 | #   define TIXMLASSERT( x )               do {} while(false)
+      |                                           ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2713:13: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 2713 |             TIXMLASSERT( p <= q );
+      |             ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:81:43: note: expanded from macro 'TIXMLASSERT'
+   81 | #   define TIXMLASSERT( x )               do {} while(false)
+      |                                           ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2717:9: note: +2, including nesting penalty of 1, nesting level increased to 2
+ 2717 |         if ( p < q ) {
+      |         ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2719:53: note: +3, including nesting penalty of 2, nesting level increased to 3
+ 2719 |             const int toPrint = ( INT_MAX < delta ) ? INT_MAX : static_cast<int>(delta);
+      |                                                     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2723:5: note: +1, nesting level increased to 1
+ 2723 |     else {
+      |     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2684:13: warning: nested 'if' statements can be merged together [readability-redundant-nested-if]
+ 2684 |             if ( *q > 0 && *q < ENTITY_RANGE ) {
+      |             ^    ~~~~~~~~~~~~~~~~~~~~~~~~~~~   ~
+      |                 ( *q > 0 && *q < ENTITY_RANGE ) && ( flag[static_cast<unsigned char>(*q)] )
+ 2685 |                 // Check for entities. If one is found, flush
+ 2686 |                 // the stream up until the entity, write the
+ 2687 |                 // entity, and keep looking.
+ 2688 |                 if ( flag[static_cast<unsigned char>(*q)] ) {
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2688:17: note: nested 'if' statement to merge declared here
+ 2688 |                 if ( flag[static_cast<unsigned char>(*q)] ) {
+      |                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2771:33: warning: 2 adjacent parameters of 'PushAttribute' of similar type ('const char *') are easily swapped by mistake [bugprone-easily-swappable-parameters]
+ 2771 | void XMLPrinter::PushAttribute( const char* name, const char* value )
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2771:45: note: the first parameter in the range is 'name'
+ 2771 | void XMLPrinter::PushAttribute( const char* name, const char* value )
+      |                                             ^~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2771:63: note: the last parameter in the range is 'value'
+ 2771 | void XMLPrinter::PushAttribute( const char* name, const char* value )
+      |                                                               ^~~~~
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:171:11: warning: function 'tinyxml2::StrPair::ParseText' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name]
+  171 |     char* ParseText( char* in, const char* endTag, int strFlags, int* curLineNumPtr );
+      |           ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:200:16: note: the definition seen here
+  200 | char* StrPair::ParseText( char* p, const char* endTag, int strFlags, int* curLineNumPtr )
+      |                ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:171:11: note: differing parameters are named here: ('in'), in definition: ('p')
+  171 |     char* ParseText( char* in, const char* endTag, int strFlags, int* curLineNumPtr );
+      |           ^                ~~
+      |                            p
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:172:11: warning: function 'tinyxml2::StrPair::ParseName' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name]
+  172 |     char* ParseName( char* in );
+      |           ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:225:16: note: the definition seen here
+  225 | char* StrPair::ParseName( char* p )
+      |                ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:172:11: note: differing parameters are named here: ('in'), in definition: ('p')
+  172 |     char* ParseName( char* in );
+      |           ^                ~~
+      |                            p
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:747:10: warning: function 'tinyxml2::XMLNode::SetValue' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name]
+  747 |     void SetValue( const char* val, bool staticMem=false );
+      |          ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:861:15: note: the definition seen here
+  861 | void XMLNode::SetValue( const char* str, bool staticMem )
+      |               ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:747:10: note: differing parameters are named here: ('val'), in definition: ('str')
+  747 |     void SetValue( const char* val, bool staticMem=false );
+      |          ^                     ~~~
+      |                                str
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:1628:11: warning: function 'tinyxml2::XMLElement::QueryInt64Text' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name]
+ 1628 |         XMLError QueryInt64Text(int64_t* uval) const;
+      |                  ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:1804:22: note: the definition seen here
+ 1804 | XMLError XMLElement::QueryInt64Text(int64_t* ival) const
+      |                      ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:1628:11: note: differing parameters are named here: ('uval'), in definition: ('ival')
+ 1628 |         XMLError QueryInt64Text(int64_t* uval) const;
+      |                  ^                       ~~~~
+      |                                          ival
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:1844:17: warning: function 'tinyxml2::XMLDocument::NewComment' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name]
+ 1844 |     XMLComment* NewComment( const char* comment );
+      |                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2285:26: note: the definition seen here
+ 2285 | XMLComment* XMLDocument::NewComment( const char* str )
+      |                          ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:1844:17: note: differing parameters are named here: ('comment'), in definition: ('str')
+ 1844 |     XMLComment* NewComment( const char* comment );
+      |                 ^                       ~~~~~~~
+      |                                         str
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:1850:14: warning: function 'tinyxml2::XMLDocument::NewText' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name]
+ 1850 |     XMLText* NewText( const char* text );
+      |              ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2293:23: note: the definition seen here
+ 2293 | XMLText* XMLDocument::NewText( const char* str )
+      |                       ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:1850:14: note: differing parameters are named here: ('text'), in definition: ('str')
+ 1850 |     XMLText* NewText( const char* text );
+      |              ^                    ~~~~
+      |                                   str
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:1862:21: warning: function 'tinyxml2::XMLDocument::NewDeclaration' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name]
+ 1862 |     XMLDeclaration* NewDeclaration( const char* text=0 );
+      |                     ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2301:30: note: the definition seen here
+ 2301 | XMLDeclaration* XMLDocument::NewDeclaration( const char* str )
+      |                              ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:1862:21: note: differing parameters are named here: ('text'), in definition: ('str')
+ 1862 |     XMLDeclaration* NewDeclaration( const char* text=0 );
+      |                     ^                           ~~~~
+      |                                                 str
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:1868:17: warning: function 'tinyxml2::XMLDocument::NewUnknown' has a definition with different parameter names [readability-inconsistent-declaration-parameter-name]
+ 1868 |     XMLUnknown* NewUnknown( const char* text );
+      |                 ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.cpp:2309:26: note: the definition seen here
+ 2309 | XMLUnknown* XMLDocument::NewUnknown( const char* str )
+      |                          ^
+/Users/darkomladenovski/Desktop/2024_Analysis_18-knights-of-rendlion-board-game/tinyxml2/tinyxml2.h:1868:17: note: differing parameters are named here: ('text'), in definition: ('str')
+ 1868 |     XMLUnknown* NewUnknown( const char* text );
+      |                 ^                       ~~~~
+      |                                         str
+Suppressed 538 warnings (538 in non-user code).
+Use -header-filter=.* or leave it as default to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

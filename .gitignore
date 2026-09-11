@@ -6,3 +6,4 @@ tests/html/
 tinyxml2/build_asan/
 tinyxml2/build_ubsan/
 tinyxml2/build_fuzz/
+tinyxml2/build_tidy/

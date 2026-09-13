@@ -1,0 +1,186 @@
+Checking tinyxml2.cpp ...
+tinyxml2.h:203:5: warning: Member variable 'DynArray < XMLNode * , 10 >::_pool' is not initialized in the constructor. [uninitMemberVar]
+    DynArray() :
+    ^
+tinyxml2.h:203:5: warning: Member variable 'DynArray < const char * , 10 >::_pool' is not initialized in the constructor. [uninitMemberVar]
+    DynArray() :
+    ^
+tinyxml2.h:203:5: warning: Member variable 'DynArray < char , 20 >::_pool' is not initialized in the constructor. [uninitMemberVar]
+    DynArray() :
+    ^
+tinyxml2.cpp:1209:15: style: The member function 'tinyxml2::XMLNode::InsertChildPreamble' can be static. [functionStatic]
+void XMLNode::InsertChildPreamble( XMLNode* insertThis ) const
+              ^
+tinyxml2.h:969:10: note: The member function 'tinyxml2::XMLNode::InsertChildPreamble' can be static.
+    void InsertChildPreamble( XMLNode* insertThis ) const;
+         ^
+tinyxml2.cpp:1209:15: note: The member function 'tinyxml2::XMLNode::InsertChildPreamble' can be static.
+void XMLNode::InsertChildPreamble( XMLNode* insertThis ) const
+              ^
+tinyxml2.cpp:2332:19: style: The member function 'tinyxml2::XMLDocument::DeleteNode' can be static. [functionStatic]
+void XMLDocument::DeleteNode( XMLNode* node ) {
+                  ^
+tinyxml2.h:1874:10: note: The member function 'tinyxml2::XMLDocument::DeleteNode' can be static.
+    void DeleteNode( XMLNode* node );
+         ^
+tinyxml2.cpp:2332:19: note: The member function 'tinyxml2::XMLDocument::DeleteNode' can be static.
+void XMLDocument::DeleteNode( XMLNode* node ) {
+                  ^
+tinyxml2.h:1684:5: style: Class 'XMLElement' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+    XMLElement( XMLDocument* doc );
+    ^
+tinyxml2.h:1727:5: style: Class 'XMLDocument' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+    XMLDocument( bool processEntities = true, Whitespace whitespaceMode = PRESERVE_WHITESPACE );
+    ^
+tinyxml2.h:2250:5: style: Class 'XMLPrinter' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+    XMLPrinter( FILE* file=0, bool compact = false, int depth = 0, EscapeAposCharsInAttributes aposInAttributes = ESCAPE_APOS_CHARS_IN_ATTRIBUTES );
+    ^
+tinyxml2.h:1016:14: style: The destructor '~XMLText' overrides a destructor in a base class but is not marked with a 'override' specifier. [missingOverride]
+    virtual ~XMLText()            {}
+             ^
+tinyxml2.h:948:14: note: Virtual destructor in base class
+    virtual ~XMLNode();
+             ^
+tinyxml2.h:1016:14: note: Destructor in derived class
+    virtual ~XMLText()            {}
+             ^
+tinyxml2.h:1047:14: style: The destructor '~XMLComment' overrides a destructor in a base class but is not marked with a 'override' specifier. [missingOverride]
+    virtual ~XMLComment();
+             ^
+tinyxml2.h:948:14: note: Virtual destructor in base class
+    virtual ~XMLNode();
+             ^
+tinyxml2.h:1047:14: note: Destructor in derived class
+    virtual ~XMLComment();
+             ^
+tinyxml2.h:1086:14: style: The destructor '~XMLDeclaration' overrides a destructor in a base class but is not marked with a 'override' specifier. [missingOverride]
+    virtual ~XMLDeclaration();
+             ^
+tinyxml2.h:948:14: note: Virtual destructor in base class
+    virtual ~XMLNode();
+             ^
+tinyxml2.h:1086:14: note: Destructor in derived class
+    virtual ~XMLDeclaration();
+             ^
+tinyxml2.h:1121:14: style: The destructor '~XMLUnknown' overrides a destructor in a base class but is not marked with a 'override' specifier. [missingOverride]
+    virtual ~XMLUnknown();
+             ^
+tinyxml2.h:948:14: note: Virtual destructor in base class
+    virtual ~XMLNode();
+             ^
+tinyxml2.h:1121:14: note: Destructor in derived class
+    virtual ~XMLUnknown();
+             ^
+tinyxml2.h:1685:14: style: The destructor '~XMLElement' overrides a destructor in a base class but is not marked with a 'override' specifier. [missingOverride]
+    virtual ~XMLElement();
+             ^
+tinyxml2.h:948:14: note: Virtual destructor in base class
+    virtual ~XMLNode();
+             ^
+tinyxml2.h:1685:14: note: Destructor in derived class
+    virtual ~XMLElement();
+             ^
+tinyxml2.h:1728:6: style: The destructor '~XMLDocument' overrides a destructor in a base class but is not marked with a 'override' specifier. [missingOverride]
+    ~XMLDocument();
+     ^
+tinyxml2.h:948:14: note: Virtual destructor in base class
+    virtual ~XMLNode();
+             ^
+tinyxml2.h:1728:6: note: Destructor in derived class
+    ~XMLDocument();
+     ^
+tinyxml2.h:2251:14: style: The destructor '~XMLPrinter' overrides a destructor in a base class but is not marked with a 'override' specifier. [missingOverride]
+    virtual ~XMLPrinter() {}
+             ^
+tinyxml2.h:476:14: note: Virtual destructor in base class
+    virtual ~XMLVisitor() {}
+             ^
+tinyxml2.h:2251:14: note: Destructor in derived class
+    virtual ~XMLPrinter() {}
+             ^
+tinyxml2.h:343:6: style: The destructor '~MemPoolT < sizeof ( XMLElement ) >' overrides a destructor in a base class but is not marked with a 'override' specifier. [missingOverride]
+    ~MemPoolT() {
+     ^
+tinyxml2.h:326:14: note: Virtual destructor in base class
+    virtual ~MemPool() {}
+             ^
+tinyxml2.h:343:6: note: Destructor in derived class
+    ~MemPoolT() {
+     ^
+tinyxml2.h:343:6: style: The destructor '~MemPoolT < sizeof ( XMLAttribute ) >' overrides a destructor in a base class but is not marked with a 'override' specifier. [missingOverride]
+    ~MemPoolT() {
+     ^
+tinyxml2.h:326:14: note: Virtual destructor in base class
+    virtual ~MemPool() {}
+             ^
+tinyxml2.h:343:6: note: Destructor in derived class
+    ~MemPoolT() {
+     ^
+tinyxml2.h:343:6: style: The destructor '~MemPoolT < sizeof ( XMLText ) >' overrides a destructor in a base class but is not marked with a 'override' specifier. [missingOverride]
+    ~MemPoolT() {
+     ^
+tinyxml2.h:326:14: note: Virtual destructor in base class
+    virtual ~MemPool() {}
+             ^
+tinyxml2.h:343:6: note: Destructor in derived class
+    ~MemPoolT() {
+     ^
+tinyxml2.h:343:6: style: The destructor '~MemPoolT < sizeof ( XMLComment ) >' overrides a destructor in a base class but is not marked with a 'override' specifier. [missingOverride]
+    ~MemPoolT() {
+     ^
+tinyxml2.h:326:14: note: Virtual destructor in base class
+    virtual ~MemPool() {}
+             ^
+tinyxml2.h:343:6: note: Destructor in derived class
+    ~MemPoolT() {
+     ^
+tinyxml2.cpp:1139:35: style: Condition 'FirstChild()' is always true [knownConditionTrueFalse]
+                        FirstChild() &&
+                                  ^
+tinyxml2.h:406:9: portability: %d in format string (no. 2) requires 'int' but the argument type is 'size_t {aka unsigned long}'. [invalidPrintfArgType_sint]
+        printf( "Mempool %s watermark=%d [%dk] current=%d size=%d nAlloc=%d blocks=%d\n",
+        ^
+tinyxml2.h:406:9: portability: %d in format string (no. 3) requires 'int' but the argument type is 'size_t {aka unsigned long}'. [invalidPrintfArgType_sint]
+        printf( "Mempool %s watermark=%d [%dk] current=%d size=%d nAlloc=%d blocks=%d\n",
+        ^
+tinyxml2.h:406:9: portability: %d in format string (no. 4) requires 'int' but the argument type is 'size_t {aka unsigned long}'. [invalidPrintfArgType_sint]
+        printf( "Mempool %s watermark=%d [%dk] current=%d size=%d nAlloc=%d blocks=%d\n",
+        ^
+tinyxml2.h:406:9: portability: %d in format string (no. 5) requires 'int' but the argument type is 'size_t {aka unsigned long}'. [invalidPrintfArgType_sint]
+        printf( "Mempool %s watermark=%d [%dk] current=%d size=%d nAlloc=%d blocks=%d\n",
+        ^
+tinyxml2.h:406:9: portability: %d in format string (no. 6) requires 'int' but the argument type is 'size_t {aka unsigned long}'. [invalidPrintfArgType_sint]
+        printf( "Mempool %s watermark=%d [%dk] current=%d size=%d nAlloc=%d blocks=%d\n",
+        ^
+tinyxml2.cpp:1972:17: warning: Either the condition '!p' is redundant or there is possible null pointer dereference: p. [nullPointerRedundantCheck]
+        if ( !(*p) ) {
+                ^
+tinyxml2.cpp:1986:18: note: Assuming that condition '!p' is not redundant
+            if ( !p || Attribute( attrib->Name() ) ) {
+                 ^
+tinyxml2.cpp:1972:17: note: Null pointer dereference
+        if ( !(*p) ) {
+                ^
+tinyxml2.cpp:1978:67: warning: Either the condition '!p' is redundant or there is possible null pointer dereference: p. [nullPointerRedundantCheck]
+        if (XMLUtil::IsNameStartChar( static_cast<unsigned char>(*p) ) ) {
+                                                                  ^
+tinyxml2.cpp:1986:18: note: Assuming that condition '!p' is not redundant
+            if ( !p || Attribute( attrib->Name() ) ) {
+                 ^
+tinyxml2.cpp:1978:67: note: Null pointer dereference
+        if (XMLUtil::IsNameStartChar( static_cast<unsigned char>(*p) ) ) {
+                                                                  ^
+Checking tinyxml2.cpp: ANDROID_NDK=ANDROID_NDK...
+Checking tinyxml2.cpp: ANDROID_NDK=ANDROID_NDK;TIXMLASSERT...
+tinyxml2.h:150:9: error: syntax error [syntaxError]
+        TIXMLASSERT( start );
+        ^
+Checking tinyxml2.cpp: TINYXML2_DEBUG=TINYXML2_DEBUG...
+Checking tinyxml2.cpp: TINYXML2_EXPORT=TINYXML2_EXPORT;_MSC_VER=_MSC_VER...
+Checking tinyxml2.cpp: TINYXML2_IMPORT=TINYXML2_IMPORT;_MSC_VER=_MSC_VER...
+Checking tinyxml2.cpp: TIXMLASSERT...
+Checking tinyxml2.cpp: TIXMLASSERT;_MSC_VER=_MSC_VER...
+Checking tinyxml2.cpp: _DEBUG=_DEBUG;__DEBUG__=__DEBUG__...
+Checking tinyxml2.cpp: _MSC_VER=1400;_MSC_VER=_MSC_VER...
+Checking tinyxml2.cpp: _MSC_VER=_MSC_VER...
+Checking tinyxml2.cpp: __ANDROID_API__=25;__ANDROID__=__ANDROID__...

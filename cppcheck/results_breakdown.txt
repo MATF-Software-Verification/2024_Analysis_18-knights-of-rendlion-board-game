@@ -1,0 +1,8 @@
+  11 [missingOverride]
+   5 [invalidPrintfArgType_sint]
+   3 [uninitMemberVar]
+   3 [noExplicitConstructor]
+   2 [nullPointerRedundantCheck]
+   2 [functionStatic]
+   1 [syntaxError]
+   1 [knownConditionTrueFalse]
